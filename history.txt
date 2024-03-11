@@ -1,0 +1,60 @@
+    1  yum install git
+    2  clear
+    3  mkdir git-case-study
+    4  cd git-case-study/
+    5  git init
+    6  main.txt
+    7  touch main.txt
+    8  git add .
+    9  git commit -m "main.txt on master"
+   10  git branch develop
+   11  git branch release 1.0
+   12  git branch release_1.0
+   13  git branch release_2.0
+   14  git checkout release_1.0
+   15  touch release_1_0.txt
+   16  git add .
+   17  git commit -m "Release 1.0 commit"
+   18  git checkout release_2.0
+   19  touch release_2_0.txt
+   20  git add .
+   21  git commit -m "Release 2.0 commit"
+   22  git checkout develop 
+   23  ls
+   24  git merge release_1.0 
+   25  ls
+   26  git merge release_2.0 
+   27  ls
+   28  git branch
+   29  git branch test
+   30  ls
+   31  git checkout test 
+   32  touch test.txt
+   33  git add .
+   34  git commit -m "Test branch commit"
+   35  git branch
+   36  git checkout develop 
+   37  git branch hotfix
+   38  git branch
+   39  git checkout hotfix 
+   40  touch hotfix.txt
+   41  git add .
+   42  git commit -m "Hotfix commit"
+   43  git branch
+   44  git checkout develop 
+   45  ls
+   46  git merge test
+   47  ls
+   48  git merge hotfix 
+   49  git checkout master 
+   50  ls
+   51  git merge develop 
+   52  ls
+   53  git remote add origin https://github.com/sparkyx0022/Gitflow-Case-Study.git
+   54  git push origin master 
+   55  git push origin develop 
+   56  git push origin release_1.0 
+   57  git push origin release_2.0 
+   58  git push origin test 
+   59  git push origin hotfix 
+   60  history >> history.txt
